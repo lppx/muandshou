@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { Modal,Card } from 'antd';
+import { Modal,Card,Divider } from 'antd';
 import axios from 'axios'
 import  '../css/todolist.css'
-const { Meta } = Card;
-const todoData  = require('../db/todo.json')
+// const { Meta } = Card;
 
 const api = 'https://raw.githubusercontent.com/lppx/muandshou/master/src/db/todo.json'
 
@@ -13,7 +12,7 @@ class ToDoList extends React.Component{
         super(props)
         this.state = {
             msg:'',
-            data:todoData,
+            data:[],
             date:'',
             visible: false,
             modelTodo:'',
@@ -47,17 +46,18 @@ showModal = (data) => {
     axios.get(api)
     .then((response)=>{
         // handle success
-        console.log('lppx:',JSON.stringify(response.data));
+        // console.log('lppx:',JSON.stringify(response.data));
         this.setState({
             data:response.data
         })
     })
     .catch((error)=>{
         // handle error
-        console.log(error);
-        // this.setState({
-        //     data:todoData
-        // })
+        console.log('error:',error);
+        const todoData  = require('../db/todo.json')
+        this.setState({
+            data:todoData
+        })
     })
     .then(function () {
         // always executed
@@ -74,7 +74,7 @@ showModal = (data) => {
     })
   }
   componentDidMount(){
-    // this.getData();
+    this.getData();
     this.getLoveDate();
 }
     render(){
@@ -106,6 +106,8 @@ showModal = (data) => {
                         })
                     }
                 </ul>
+                <Divider dashed />
+                <p>你是第<span id="busuanzi_value_site_uv"></span>位祝福者💖谢谢！</p>
                 <Modal
                 // title="Basic Modal"
                 footer={null}
@@ -114,7 +116,8 @@ showModal = (data) => {
                 closable={false}
                 onOk={this.handleOk}
                 onCancel={this.handleCancel}
-                destroyOnClose={true}
+                // destroyOnClose={true}
+                centered={true}
                 >
                 <img style={{"width":"100%"}} src={this.state.modelImg || ''}/>
                 <div className="modeltitle">{this.state.modelTime}</div>
