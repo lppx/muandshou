@@ -46,7 +46,7 @@ showModal = (data) => {
     axios.get(api)
     .then((response)=>{
         // handle success
-        // console.log('lppx:',JSON.stringify(response.data));
+        console.log('lppx:',JSON.stringify(response.data));
         this.setState({
             data:response.data
         })
