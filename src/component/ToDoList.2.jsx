@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Modal,Card } from 'antd';
 import axios from 'axios'
-import  '../css/todolist.css'
 const { Meta } = Card;
 const todoData  = require('../db/todo.json')
 
@@ -30,6 +29,7 @@ showModal = (data) => {
     });
     console.log(JSON.stringify(data))
   }
+
   handleOk = (e) => {
     console.log(e);
     this.setState({
@@ -114,12 +114,10 @@ showModal = (data) => {
                 closable={false}
                 onOk={this.handleOk}
                 onCancel={this.handleCancel}
-                destroyOnClose={true}
                 >
-                <img style={{"width":"100%"}} src={this.state.modelImg || ''}/>
-                <div className="modeltitle">{this.state.modelTime}</div>
-                <div className="modeldesc">{this.state.modelTodo}</div>
-                {/* <Card
+                {/* <img style={{"width":"100%"}} src={this.state.modelImg || ''}/>
+                <p>{this.state.modelTime}</p> */}
+                <Card
                     hoverable
                     style={{ width: "100%" ,border:"none",paddingBottom:0}}
                     cover={<img src={this.state.modelImg || ''} />}
@@ -128,7 +126,7 @@ showModal = (data) => {
                     title={this.state.modelTime}
                     description={this.state.modelTodo}
                     />
-                </Card> */}
+                </Card>
                 </Modal> 
             </div>
         )

@@ -1,0 +1,16 @@
+.modeltitle{
+    overflow: hidden;
+    color: rgba(0,0,0,0.85);
+    font-weight: 500;
+    font-size: 16px!important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+}
+
+.modeldesc{
+    overflow: hidden;
+    color: rgba(0,0,0,0.85);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
