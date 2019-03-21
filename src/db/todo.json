@@ -7,19 +7,19 @@
 }, {
     "description": "",
     "toDo": "一起逛超市，把购物车塞得满满的",
-    "done": false,
+    "done": true,
     "img": "", 
     "time": ""
 }, {
     "description": 3,
-    "toDo": "一起研究菜谱，下厨做饭，等厨艺好了就请共同的朋友来吃",
-    "done": false,
-    "img": "",
-    "time": ""
+    "toDo": "下厨给我做好吃的饭",
+    "done": true,
+    "img": "http://img.lppx.biz/shuizhurou-160826.jpg",
+    "time": "2016-08-26"
 }, {
     "description": 4,
     "toDo": "一起看电影",
-    "done": false,
+    "done": true,
     "img": "",
     "time": ""
 }, {
@@ -34,18 +34,13 @@
     "done": false,
     "img": "",
     "time": ""
-}, {
-    "description": 7,
-    "toDo": "遇上好天气，还可以带上食材和炉具，去户外进行简单的野炊，或是准备一些小点心，在郊外来一次放松身心的野餐",
-    "done": false,
-    "img": "",
-    "time": ""
-}, {
+}, 
+ {
     "description": 8,
-    "toDo": "去对方的公司等他或者接她下班，然后一起去吃对方公司附近的美食",
-    "done": false,
-    "img": "",
-    "time": ""
+    "toDo": "去你工作的地方",
+    "done": true,
+    "img": "http://img.lppx.biz/nigongzuodi-171009.jpg",
+    "time": "2017-10-09"
 }, {
     "description": 9,
     "toDo": "一起去好吃的餐馆挨个打卡，一起去人气最旺的店门前排队",
@@ -54,10 +49,10 @@
     "time": ""
 }, {
     "description": 10,
-    "toDo": "一起去等日出赏日落，在最美的光影中拍下好看的剪影照片",
-    "done": false,
-    "img": "",
-    "time": ""
+    "toDo": "一起去赏日落，在最美的光影中拍下好看的剪影照片",
+    "done": true,
+    "img": "http://img.lppx.biz/riluo-170119.jpg",
+    "time": "2016-07-01"
 }, {
     "description": 11,
     "toDo": "坐在草地上看满天繁星",
@@ -84,13 +79,13 @@
     "time": ""
 }, {
     "description": 15,
-    "toDo": "一起去爬山，穿上轻便的服装，背上背包，穿梭在山间、小溪边，手牵着手一步步向上走，随便聊一聊生活里的趣事或者是童年故事，下山之后两个人再一起吃一顿好吃的",
+    "toDo": "一起去爬山",
     "done": false,
     "img": "",
     "time": ""
 }, {
     "description": 16,
-    "toDo": "一起去摄影，带上相机，拍下女朋友各种美丽瞬间",
+    "toDo": "一起去摄影，带上相机，拍下你各种美丽瞬间",
     "done": false,
     "img": "",
     "time": ""
@@ -135,7 +130,7 @@
     "toDo": "一起去迪士尼",
     "done": true,
     "img": "http://img.lppx.biz/dishini.jpg",
-    "time": ""
+    "time": "2018-07-26"
 }, {
     "description": 24,
     "toDo": "一起去听讲座、参加读书会",
@@ -144,7 +139,7 @@
     "time": ""
 }, {
     "description": 25,
-    "toDo": "一起去征服华山，一起过张家界恐怖的玻璃栈道，挑战心跳",
+    "toDo": "一起过张家界玻璃栈道，挑战心跳",
     "done": false,
     "img": "",
     "time": ""
@@ -173,12 +168,6 @@
     "img": "",
     "time": ""
 }, {
-    "description": 30,
-    "toDo": "一起做快乐的铲屎官",
-    "done": false,
-    "img": "",
-    "time": ""
-}, {
     "description": 31,
     "toDo": "一起养植物",
     "done": false,
@@ -187,9 +176,9 @@
 }, {
     "description": 32,
     "toDo": "一起打电玩 抓娃娃",
-    "done": false,
-    "img": "",
-    "time": ""
+    "done": true,
+    "img": "http://img.lppx.biz/dadianwan-160707.jpeg",
+    "time": "2016-07-07"
 }, {
     "description": 33,
     "toDo": "下棋！让她赢",
@@ -220,15 +209,9 @@
     "done": false,
     "img": "",
     "time": ""
-}, {
-    "description": 38,
-    "toDo": "选择所在城市最浪漫的地方，来一场精心准备的求婚",
-    "done": false,
-    "img": "",
-    "time": ""
-}, {
+},{
     "description": 39,
-    "toDo": "一起做摩天轮",
+    "toDo": "一起坐摩天轮",
     "done": false,
     "img": "",
     "time": ""
@@ -238,18 +221,13 @@
     "done": false,
     "img": "",
     "time": ""
-}, {
-    "description": 41,
-    "toDo": "一起看日出日落",
-    "done": false,
-    "img": "",
-    "time": ""
-}, {
+},
+ {
     "description": 42,
     "toDo": "一起吃冰淇淋",
-    "done": false,
-    "img": "",
-    "time": ""
+    "done": true,
+    "img": "http://img.lppx.biz/bingqilin-160903.jpg",
+    "time": "2016-09-03"
 }, {
     "description": 43,
     "toDo": "一起去捡贝壳",
@@ -265,7 +243,7 @@
 }, {
     "description": 45,
     "toDo": "一起淋雨",
-    "done": false,
+    "done": true,
     "img": "",
     "time": ""
 }, {
@@ -280,13 +258,8 @@
     "done": false,
     "img": "",
     "time": ""
-}, {
-    "description": 48,
-    "toDo": "一起进鬼屋",
-    "done": false,
-    "img": "",
-    "time": ""
-}, {
+},
+ {
     "description": 49,
     "toDo": "教我一项你的特长",
     "done": false,
@@ -295,7 +268,7 @@
 }, {
     "description": 50,
     "toDo": "教对方讲家乡话",
-    "done": false,
+    "done": true,
     "img": "",
     "time": ""
 }, {
@@ -319,13 +292,13 @@
 }, {
     "description": 54,
     "toDo": "一起荡秋千",
-    "done": false,
+    "done": true,
     "img": "",
     "time": ""
 }, {
     "description": 55,
     "toDo": "念故事哄她入睡",
-    "done": false,
+    "done": true,
     "img": "",
     "time": ""
 }, {
@@ -366,19 +339,68 @@
     "time": ""
 }, {
     "description": 62,
-    "toDo": "背着我走一段路",
-    "done": false,
+    "toDo": "背着她爬楼梯、圈操场",
+    "done": true,
     "img": "",
     "time": ""
 }, {
     "description": 63,
     "toDo": "帮你吹头发",
-    "done": false,
+    "done": true,
     "img": "",
     "time": ""
 }, {
     "description": 64,
     "toDo": "一起坐火车去一个当天就能回来的地方",
+    "done": false,
+    "img": "",
+    "time": ""
+},
+{
+    "description": 38,
+    "toDo": "一起做志愿者",
+    "done": false,
+    "img": "",
+    "time": ""
+},
+{
+    "description": 64,
+    "toDo": "躺在沙滩上",
+    "done": true,
+    "img": "http://img.lppx.biz/shatan-170715.jpg",
+    "time": "2017-07-15"
+},
+{
+    "description": 64,
+    "toDo": "坐飞机去看你",
+    "done": true,
+    "img": "http://img.lppx.biz/zuofeiji-180316.jpg",
+    "time": "2018-03-16"
+},
+{
+    "description": 38,
+    "toDo": "结束异地恋",
+    "done": false,
+    "img": "",
+    "time": ""
+},
+{
+    "description": 38,
+    "toDo": "选择所在城市最浪漫的地方，来一场精心准备的求婚",
+    "done": false,
+    "img": "",
+    "time": ""
+},
+{
+    "description": 38,
+    "toDo": "教小孩写作业",
+    "done": false,
+    "img": "",
+    "time": ""
+},
+{
+    "description": 38,
+    "toDo": "白头偕老",
     "done": false,
     "img": "",
     "time": ""

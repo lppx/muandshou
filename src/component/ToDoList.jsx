@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { Modal, Button,Card } from 'antd';
-
+import { Modal,Card } from 'antd';
+import axios from 'axios'
 const { Meta } = Card;
 const todoData  = require('../db/todo.json')
 
+const api = 'https://raw.githubusercontent.com/lppx/muandshou/master/src/db/todo.json'
 
 class ToDoList extends React.Component{
     constructor(props){
@@ -42,28 +43,64 @@ showModal = (data) => {
       visible: false,
     });
   }
+  getData=()=>{
+    axios.get(api)
+    .then((response)=>{
+        // handle success
+        console.log('lppx:',JSON.stringify(response.data));
+        this.setState({
+            data:response.data
+        })
+    })
+    .catch((error)=>{
+        // handle error
+        console.log(error);
+        // this.setState({
+        //     data:todoData
+        // })
+    })
+    .then(function () {
+        // always executed
+    });
+  }
 
+  getLoveDate=()=>{
+    let s = new Date('2015/10/22 00:00:00')
+    let n = new Date();
+    let date = n.getTime()-s.getTime() 
+    date = Math.floor(date/(24*3600*1000))
+    this.setState({
+        date:date
+    })
+  }
+  componentDidMount(){
+    // this.getData();
+    this.getLoveDate();
+}
     render(){
+        console.log("this data:",this.state.data)
         return (
             <div style={{"padding":"2em","maxWidth":"800px","margin":"0 auto"}}>
                 <h3 style={{"marginBottom":"20px"}}>记录木木&啊兽相恋<span style={{"color":"#f759ab"}}>{this.state.date}</span>天 </h3>
                 <ul style={{"listStyle":"none"}}>
                     {   
-                        
                         this.state.data.map((v,k)=>{
                             let iconColor ,isPointer = ''
                             let isPointEvents = 'none'
 
                             if(v.done){
                                 iconColor = "#f759ab"
+                            }
+                            if (v.img !='') {
                                 isPointer = "pointer"
                                 isPointEvents = ''
                             }
                             return (
                                 <li key = {k} style={{"pointerEvents":isPointEvents,"cursor":isPointer}} onClick={this.showModal.bind(this,v)}>
                                     <svg style={{"color":iconColor}} className="icon" aria-hidden="true">
-                                    <use xlinkHref="#icon-aixin"></use>
+                                    <use xlinkHref="#icon-aixin"></use> 
                                     </svg>
+                                    <span> </span>
                                     {v.toDo}
                                 </li>
                             )
@@ -98,15 +135,7 @@ showModal = (data) => {
     componentWillMount() {
         
     }
-    componentDidMount =()=>{
-        let s = new Date('2015/10/22')
-        let n = new Date();
-        let date = n.getTime()-s.getTime() 
-        date = Math.floor(date/(24*3600*1000))
-        this.setState({
-            date:date
-        })
-    }
+    
 }
 
 export default ToDoList
